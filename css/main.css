@@ -1,3 +1,14 @@
+:root {
+    --color: #000; /* Оголошення змінної */
+	--button: red; /* Оголошення змінної */
+}
+
+li , ul {
+    list-style: none; /* Вимикає маркери списку */
+    margin: 0; /* Встановлює відступи зліва та справа на 0 */
+    padding: 0; /* Встановлює внутрішні відступи на 0 */
+}
+
 body{
 	display: flex;
 	flex-direction: column;
@@ -35,11 +46,12 @@ section{
 .head_section h2{
 	width: 100%; 
 	text-transform: uppercase;
-	font-size: 70px;
+	font-size: 40px;
+	padding: 25px 0;
 	font-weight: 500;
 	color: #fff;
-	background: #690DD3;
-	padding: 1% 0 1% 0;
+	background: var(--color);
+	/* padding: 1% 0 1% 0; */
 	margin: 0;
 	text-align: center;
 	font-family: 'Montserrat';
@@ -82,7 +94,7 @@ section{
 	justify-content: space-around;
 	background-color: #fafafa;
 	border-radius: 20px;
-	border: solid 3px #690DD3; 
+	border: solid 3px var(--color); 
 	margin-top: -30px;
 }
 .cost_block h6{
@@ -92,7 +104,7 @@ section{
 .pr_bl{
 	width: 20%;
 	height: 30px;
-	background-color: #690DD3;
+	background-color: var(--color);
 }
 .pr{
 	text-align: left;
@@ -113,7 +125,7 @@ section{
 	text-decoration: line-through;
 }
 .del{
-	font-family: 'Montserrat'
+	font-family: 'Montserrat';
 	font-size: 15px;
 	font-weight: 400;
 	letter-spacing: 1px;
@@ -121,7 +133,7 @@ section{
 	margin: 1% 0 0 0;
 }
 .del span{
-	color: #690DD3;
+	color: var(--color);
 	font-weight: 900;
 	font-size: 19px;
 }
@@ -146,7 +158,7 @@ section{
 	height: auto;
 	border: 2px solid #fff;
 	border-radius: 10px;
-	box-shadow:  -0.5em 0 .7em #690DD3;
+	box-shadow:  -0.5em 0 .7em var(--color);
 }
 .benef_card h6{
 	width: 95%;
@@ -156,7 +168,7 @@ section{
 	font-size: 13px;
 	margin: 10px 0 0 0; 
 	padding-top: 10px;
-	border-top: 2px dashed #690DD3;
+	border-top: 2px dashed var(--color);
 }
 
 
@@ -183,10 +195,10 @@ section{
 	-webkit-border-radius: 40px;
 	-moz-border-radius: 40px;
 	border-radius: 10px;
-	background: #690DD3;
+	background: var(--button);
 	-webkit-box-shadow: 0 0 0 10px rgba(255, 140, 0, 0.3);
 	-moz-box-shadow: 0 0 0 10px rgba(255, 159, 64, 0.3);
-	box-shadow: 0 0 0 2px #fff, 0 0 0 6px #690DD3;
+	box-shadow: 0 0 0 2px #fff, 0 0 0 6px var(--color);
 	font-family: 'Montserrat', sans-serif;
 	font-weight: 700;
 	font-size: 23px;
@@ -214,8 +226,8 @@ section{
         right: -50%;
         bottom: -50%;
         left: -50%;
-        background: #690DD3;
-        background: #690DD3;
+        background: var(--color);
+        background: var(--color);
         -webkit-transform: rotateZ(60deg) translate(-5em,7.5em);
         -ms-transform: rotate(60deg) translate(-5em,7.5em);
         transform: rotateZ(60deg) translate(-5em,7.5em);
@@ -273,7 +285,7 @@ section{
 	text-align: center;
 	font-size: 15px;
 	margin-top: 15px;
-	color: black;
+	color: var(--button);
 	font-weight: 500;
 }
 .follow_card a span{
@@ -284,7 +296,7 @@ section{
 .review_section a{
 	font-size: 20px;
 	text-transform: uppercase;
-	color: black;
+	color: red;
 	font-weight: 300;
 	margin: -10% 0 14% 0;
 }
@@ -325,7 +337,7 @@ section{
 }
 .trace span{
 	color: #fff;
-	background-color: #690DD3;
+	background-color: var(--color);
 	border-radius: 4px;
 	font-size: 21px;
 	font-weight: 800;
@@ -338,10 +350,10 @@ section{
 	align-self: flex-start;
 	margin-left: 5%;
 	padding-bottom: 10px;
-	border-bottom: 2px #690DD3 dotted;
+	border-bottom: 2px var(--color) dotted;
 }
 .sec_title span{
-	color: #690DD3;
+	color: var(--color);
 }
 .vdframe{
 	width: 80%;
@@ -391,8 +403,8 @@ section{
 	content: '';
 	width: 15px;
 	height: 15px;
-	border: 1px solid #690DD3;
-	background: #690DD3;
+	border: 1px solid var(--color);
+	background: var(--color);
 	-webkit-box-shadow: 0 0 0 2px #fff inset;
 	-moz-box-shadow: 0 0 0 2px #fff inset;
 	box-shadow: 0 0 0 2px #fff inset;
@@ -495,7 +507,7 @@ section{
 	font-size: 21px;
 	font-weight: 300;
 	padding-left: 4%;
-	border-left: 4px solid #690DD3;
+	border-left: 4px solid var(--color);
 	width: 22%;
 	margin-left: 5%;
 }
@@ -593,7 +605,7 @@ section{
 	font-family: 'Roboto';
 	font-size: 18px;
 	font-weight: 700;
-	background-color: #690DD3;
+	background-color: var(--color);
 	padding: 4px;
 	border-radius: 5px;
 	margin: 0;
@@ -646,7 +658,7 @@ section{
     padding: 1% 0;
     width: 100%;
     color: #fff;
-    background-color: #690DD3;
+    background-color: var(--color);
     margin-bottom: 25px;
 }
  .alrt span{
@@ -710,16 +722,16 @@ section{
 .vbr_title{
 	font-size: 20px;
 	text-transform: uppercase;
-	font-family: 'Roboto'
+	font-family: 'Roboto';
 	font-weight: 600;
 }
 .vbr_title span{
-	color: #645aa7;
+	color: var(--color);
 	font-weight: 800;
 }
 .vbr_btn{
 	width: 70%;
-	background-color: #690DD3;
+	background-color: var(--color);
 	color: #fff;
 	border-radius: 20px;
 	padding: 3% 5%;
@@ -728,7 +740,7 @@ section{
 	justify-content: center;
 	text-decoration: none;
 	font-size: 35px;
-	font-family: 'Montserrat'
+	font-family: 'Montserrat';
 	font-weight: 700;
 }
 .vbr_btn img{
@@ -941,16 +953,16 @@ select::-ms-expand {
 .vbr_title{
 	font-size: 20px;
 	text-transform: uppercase;
-	font-family: 'Roboto'
+	font-family: 'Roboto';
 	font-weight: 600;
 }
 .vbr_title span{
-	color: #645aa7;
+	color: var(--color);
 	font-weight: 800;
 }
 .vbr_btn{
 	width: 70%;
-	background-color: #645aa7;
+	background-color: var(--color);
 	color: #fff;
 	border-radius: 20px;
 	padding: 3% 5%;
@@ -959,7 +971,7 @@ select::-ms-expand {
 	justify-content: center;
 	text-decoration: none;
 	font-size: 35px;
-	font-family: 'Montserrat'
+	font-family: 'Montserrat';
 	font-weight: 700;
 }
 .vbr_btn img{
@@ -1005,7 +1017,7 @@ select::-ms-expand {
 .img_st{
 	border-radius: 25px;
 }
-footer{
+/* footer{
 	width: 90%;
 	display: flex;
 	flex-direction: column;
@@ -1014,7 +1026,7 @@ footer{
 }
 footer .discount{
 	width: 40%;
-	background-color: #690DD3;
+	background-color: var(--color);
 	border-radius: 20px;
 	font-size: 9px;
 	color: #fff;
@@ -1042,7 +1054,7 @@ footer .fop{
 	font-size: 10px;
 	font-family: 'Montserrat';
 	font-weight: 400;
-}
+} */
 
 
 
@@ -1146,7 +1158,63 @@ footer .fop{
 }
 
 
+.timer {
+	padding:  0 0 50px 0;
+	color:#000;
+}
 
+.countbox{
+    margin: 0 auto;
+    line-height: 1.2; 
+    font-size: 30px; 
+    width: 400px; 
+    text-align: center;
+    color: #fff;
+	padding: 0 0 50px 0;
+}
+.countbox .countbox-num{
+    float: left;
+    width: 120px;
+    height: 60px;
+    position: relative;
+    color: #000;
+}
+.countbox .countbox-space{
+    float: left; 
+    width: 20px;
+    line-height: 60px; 
+ }
+.countbox .countbox-space:before{
+    content: '\003A'; 
+    font:30px 'MuseoSansCyrl-900';
+    color: #000;
+    line-height: 36px;
+}
+.countbox-hours1,.countbox-mins1,.countbox-secs1, .countbox-hours2,.countbox-mins2,.countbox-secs2{
+    float: left; 
+    width: 54px;
+    height: 60px;
+    text-align: center;
+    background: #dfdfdf;
+    z-index:1;
+    font: 32px 'MuseoSansCyrl-900';
+    color: #000;
+    line-height: 60px;
+    margin: 0 3px;    
+    border-radius: 5px;
+}
+.countbox-hours-text,.countbox-mins-text,.countbox-secs-text{
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    margin-top: 66px;
+    height: 18px;
+    width: 120px;
+    font-size: 16px;
+    padding: 0 8px 4px;
+    color: #000;
+    text-transform: lowercase;
+}
 
 
 
@@ -1157,3 +1225,68 @@ footer .fop{
 	border: 1px red solid;
 }*/
 
+.footer {
+    background: rgb(26, 26, 26);
+    padding: 25px 0;
+    color: #fff;
+	width: 100%;
+}
+
+.footer__container {
+	padding: 0 20px;
+}
+
+.footer__logo img {
+    max-width: 100px;
+    max-height: 50px;
+}
+
+.footer__description {
+    font-size: 12px;
+    display: grid;
+    gap: 27.5px;
+    margin: 15px 0 0;
+    font-weight: 600;
+    line-height: 1.4;
+}
+
+.footer__subtitle {
+    display: grid;
+    gap: 10px;
+    color: rgba(255, 255, 255, 0.75);
+}
+
+.footer__socials {
+    padding: 25px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 30px);
+    grid-template-rows: 1fr;
+    gap: 10px;
+}
+
+.footer__label {
+    font-size: 11px;
+    display: flex;
+    align-items: center;
+	width: 100%;
+}
+
+.footer__store-name {
+    color: rgba(255, 255, 255, 0.75);
+    margin: 0 25px 0 0;
+}
+
+.footer__country {
+    display: flex;
+    align-items: center;
+}
+
+.footer__country span {
+    display: inline-block;
+    margin: 0 0 0 5px;
+}
+
+.footer__country img {
+    height: 16px;
+    width: 16px;
+}
